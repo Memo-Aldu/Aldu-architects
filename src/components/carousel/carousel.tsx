@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import {ICarouselItem} from "../../types/carouselItem";
+import "./carousel.scss";
 
 
 export interface IAppCarouselProps {
@@ -10,12 +11,13 @@ export interface IAppCarouselProps {
 
 const AppCarousel: React.FC<IAppCarouselProps> = (props) => {
   return (
-    <Carousel variant="dark">
+    // size is 50% of the screen 
+    <Carousel variant="dark" className="">
         {props.carouselItems.map((item, index) => {
             return (
                 <Carousel.Item interval={item.interval}>
-                <img
-                    className="d-block w-100"
+                <img 
+                    className="carousel__img"
                     src={item.image}
                     alt={item.altText}
                 />

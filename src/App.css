@@ -1,1 +1,12 @@
 
+@font-face {
+    font-family: 'RobotoMono';
+    font-weight: normal;
+    src: url(./assets/fonts/RobotoMono-VariableFont_wght.ttf) format('truetype');
+  }
+  
+  @font-face {
+      font-family: 'fonts';
+      font-weight: normal;
+      src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf) format('truetype');
+  }

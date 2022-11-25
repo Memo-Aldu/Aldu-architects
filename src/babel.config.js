@@ -3,3 +3,6 @@ module.exports = function (api) {
       plugins: ['macros'],
     }
   }
+module.exports = {
+  assets:['./assets/fonts/']
+}
